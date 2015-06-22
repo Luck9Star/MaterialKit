@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
   s.ios.deployment_target = "8.0"
-  s.source       = { :git => "https://github.com/Luck9Star/MaterialKit.git", :branch => "swift2" }
+  s.source       = { :git => "https://github.com/Luck9Star/MaterialKit.git", :tag => s.version }
 
   s.source_files  = "MaterialKit/Source/*"
   s.requires_arc = true
