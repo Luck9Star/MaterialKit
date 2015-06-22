@@ -72,12 +72,12 @@ public class MKImageView: UIImageView
         setup()
     }
 
-    override public init(image: UIImage!) {
+    override public init(image: UIImage?) {
         super.init(image: image)
         setup()
     }
-
-    override public init(image: UIImage!, highlightedImage: UIImage?) {
+    
+    override public init(image: UIImage?, highlightedImage: UIImage?) {
         super.init(image: image, highlightedImage: highlightedImage)
         setup()
     }
