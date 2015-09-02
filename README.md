@@ -1,6 +1,6 @@
 MaterialKit
 ===========
-
+[![Build Status](https://travis-ci.org/Luck9Star/MaterialKit.svg?branch=swift2)](https://travis-ci.org/Luck9Star/MaterialKit)
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
@@ -18,10 +18,10 @@ Features
 -----
 - Highly customizable
 - Complete example
-- Supports @IBDesignable to live-render the component in the Interface Builder 
+- Supports @IBDesignable to live-render the component in the Interface Builder
 - By suporting @IBInspectable, the class properties can be exposed in the Interface Builder, and you can edit these properties in realtime
 
-- [x] MKButton: floating action button, raised button, flat button, ripple effect 
+- [x] MKButton: floating action button, raised button, flat button, ripple effect
 - [x] MKTextField: ripple effect, floating placeholder
 - [x] MKTableViewCell
 - [x] MKLabel
@@ -84,7 +84,7 @@ Components
 <p align="center">
 <img style="-webkit-user-select: none;" src="https://dl.dropboxusercontent.com/u/8556646/MKBarButtonItem.gif" width="373" height="334">
 </p>
- 
+
 - Custommizable attributes: color, ripple location, animation timing function, animation duration...
 - Play ripple animation whenever you want by calling `animateRipple` method
   or by setting `userInteractionEnabled = true` ripple animation will be played when the label/imageview is tapped
