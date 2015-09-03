@@ -1,13 +1,16 @@
 osx_image: xcode7
 language: objective-c
-xcode_project: MaterialKit.xcodeproj
-xcode_scheme: MaterialKit iOS
-#before_install:
-#  - gem install xcpretty -N
-# script:
-#   - set -o pipefail
-#   - brew update
-#   - brew install xctool
-#   - rm -rf build
-#  - xcodebuild -project MaterialKit.xcodeproj -scheme "MaterialKit iOS" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" ONLY_ACTIVE_ARCH=NO -derivedDataPath build clean test | xcpretty -c
+# xcode_project: MaterialKit.xcodeproj
+# xcode_scheme: MaterialKit iOS
+# xcode_sdk: iphonesimulator8.0
+notifications:
+  email: false
+before_install:
+  - gem install xcpretty -N
+script:
+  - set -o pipefail
+  - rm -rf build
+  - xcodebuild -project MaterialKit.xcodeproj -scheme "MaterialKit iOS" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" ONLY_ACTIVE_ARCH=NO -derivedDataPath build clean test | xcpretty -c
+  # - brew update
+  # - brew install xctool
 #   - xctool -project MaterialKit.xcodeproj -scheme "MaterialKit iOS" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" ONLY_ACTIVE_ARCH=NO -derivedDataPath build clean test | xcpretty -c
